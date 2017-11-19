@@ -779,6 +779,7 @@ button {
     .call-up-menu--phone {
       font-size: 20px;
       cursor: default;
+      box-shadow: none;
     }
 
     .call-up-menu--callback {
