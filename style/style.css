@@ -448,21 +448,6 @@ button {
       margin-bottom: 2.5%;
     }
 
-    .portfolio_link::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      index: 1;
-      background-color: rgba(0, 0, 0, 0.7);
-    }
-
-    .portfolio_link:hover::before {
-      display: none;
-    }
-
     .portfolio_link:last-child {
       background-color: transparent;
     }
@@ -1040,6 +1025,21 @@ button {
 
       .portfolio_link span {
         font-size: 36px;
+      }
+
+      .portfolio_link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      .portfolio_link:hover::before {
+        display: none;
       }
     /* END PORTFOLIO */
 
