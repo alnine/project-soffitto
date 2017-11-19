@@ -38,10 +38,9 @@ button {
   min-width: 270px;
   background-color: #9CA098;
   background-image: url(../img/bg-smartphone@1x.jpg);
-  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   font-family: 'PTSans', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
