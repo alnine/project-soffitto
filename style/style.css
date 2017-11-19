@@ -37,14 +37,23 @@ button {
   flex-direction: column;
   min-width: 270px;
   background-color: #9CA098;
-  background-image: url(../img/bg-smartphone@1x.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
   font-family: 'PTSans', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
+}
+
+.page-body::before {
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(../img/bg-smartphone@1x.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -656,7 +665,7 @@ button {
 @media screen and (min-width: 480px) {
 
   /* PAGE BODY */
-    .page-body {
+    .page-body::before {
       background-image: url(../img/bg-tablet@1x.jpg);
     }
   /* END PAGE BODY */
@@ -824,7 +833,7 @@ button {
     }
 
     /* PAGE BODY */
-      .page-body {
+      .page-body::before {
         background-image: url(../img/bg-desktop@1x.jpg);
       }
 
@@ -1059,7 +1068,7 @@ button {
   screen and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-resolution: 144dpi) {
 
-    .page-body {
+    .page-body::before {
       background-image: url(../img/bg-smartphone@2x.jpg);
     }
 
@@ -1069,7 +1078,7 @@ button {
   screen and (min-width:480px) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width:480px) and (min-resolution: 144dpi) {
 
-    .page-body {
+    .page-body::before {
       background-image: url(../img/bg-tablet@2x.jpg);
     }
 
@@ -1079,7 +1088,7 @@ button {
   screen and (min-width:960px) and (-webkit-min-device-pixel-ratio: 2),
   screen and (min-width:960px) and (min-resolution: 144dpi) {
 
-    .page-body {
+    .page-body::before {
       background-image: url(../img/bg-desktop@2x.jpg);
     }
 
