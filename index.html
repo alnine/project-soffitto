@@ -196,10 +196,10 @@
             <h3 class="feedback-header">Отзывы и предложения</h3>
             <form class="feedback-form" action="index.html" method="post" autocomplete="off">
               <input class="input-field" type="text" name="name" value="" placeholder="Имя" pattern="^[a-zA-Z-А-Яа-яЁё\s\']+$">
-              <input class="input-field" type="tel" name="phone" value="" placeholder="0677775533" pattern="[0-9]{10}">
-              <input class="input-field" type="email" name="email" value="" placeholder="E-mail">
+              <input class="input-field" id="phone-mask" type="tel" name="phone" value="" placeholder="Телефон*" pattern="\+38\(0\d{2}\)\d{3}[\-]\d{2}[\-]\d{2}" title="Формат: +38(067)777-55-33">
+              <input class="input-field" type="email" name="email" value="" placeholder="E-mail*">
               <span class="feedback-form_comment">*для ответа укажите телефон или e-mail</span>
-              <textarea class="input-field" name="message" rows="7" cols="30" placeholder="Ваше сообщение..."></textarea>
+              <textarea class="input-field" name="message" rows="7" cols="30" placeholder="Ваше сообщение..." required></textarea>
               <div class="feedback-form_btn-wrapper">
                 <button class="feedback-form_btn feedback-form_btn--clean" type="reset" name="button">Очистить</button>
                 <button class="feedback-form_btn feedback-form_btn--submit" type="submit" name="button">Отправить</button>
@@ -249,6 +249,9 @@
     <!-- END FOOTER -->
 
     <script src="js/mobile-menu.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/phone-mask.js"></script>
     <script src="js/init-map.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl8xoGg5A2V4R1qANDMM6OqghiUZEMK3M&callback=initMap"></script>
 
