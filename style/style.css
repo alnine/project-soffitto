@@ -1081,6 +1081,85 @@ button {
 
 /* end ver. 1440 and more */
 
+/* ver. 1600 and more */
+
+@media screen and (min-width: 1600px) {
+
+    /* HEADER */
+      .main-logo-img {
+        width: 316px;
+        height: 60px;
+      }
+
+      .main-nav_list-item_link {
+        font-size: 22px;
+      }
+
+      .call-up-menu--phone {
+        font-size: 26px;
+      }
+
+      .call-up-menu--callback {
+        padding: 6px 12px;
+        font-size: 18px;
+      }
+    /* END HEADER */
+
+    /* PAGE PROMO CONTENT */
+      .index-promo-option_item {
+        width: 280px;
+        height: 120px;
+      }
+
+      .index-promo-option_item::before {
+        width: 62px;
+        height: 62px;
+        left: 15px;
+      }
+
+      .index-promo-option_item-link {
+        padding-left: 82px;
+        font-size: 26px;
+      }
+
+      .index-promo-option_item-description {
+        font-size: 18px;
+      }
+    /* END PAGE PROMO CONTENT */
+
+    /* ABOUT STUDIO */
+      .about-studio {
+        font-size: 24px;
+      }
+    /* END ABOUT STUDIO */
+
+    /* ADVANTAGES */
+      .advantages_item-description {
+        font-size: 24px;
+      }
+    /* END ADVANTAGES */
+
+    /* FEEDBACK */
+      .feedback-form_wrapper {
+        max-width: 350px;
+        font-size: 20px;
+      }
+    /* END FEEDBACK */
+
+    /* FOOTER */
+      .footer-contact {
+        font-size: 22px;
+      }
+
+      .footer-social_link {
+        width: 50px;
+        height: 50px;
+      }
+    /* END FOOTER */
+}
+
+/* end ver. 1600 and more */
+
 /* set of body background picture */
 
 @media
@@ -1171,6 +1250,16 @@ button {
 
       .index-promo-title_description {
         font-size: 32px;
+      }
+  }
+
+  @media screen and (min-width: 1920px) {
+      .index-promo-title_header {
+        font-size: 132px;
+      }
+
+      .index-promo-title_description {
+        font-size: 34px;
       }
   }
 /* set of fontsize in promo */
