@@ -7,10 +7,10 @@ menuButton.addEventListener("click", function(event) {
   if(menuButton.classList.contains("hamburger--open")) {
     menuButton.classList.remove("hamburger--open");
     menuButton.classList.add("hamburger--close");
-    menuList.classList.add("main-nav--visible")
+    menuList.classList.add("main-nav--visible");
   }else {
-    menuButton.classList.add("hamburger--open");
     menuButton.classList.remove("hamburger--close");
-    menuList.classList.remove("main-nav--visible")
+    menuButton.classList.add("hamburger--open");
+    menuList.classList.remove("main-nav--visible");
   }
 });
