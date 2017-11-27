@@ -23,7 +23,7 @@ window.addEventListener("keydown", function(event) {
 	}
 });
 
-bodyOverlay.addEventListener("click", function(event) {
+bodyOverlay.addEventListener("click touchstart", function(event) {
   if(callUpForm.classList.contains("call-up-menu_form--visible")) {
     callUpForm.classList.remove("call-up-menu_form--visible");
   }
