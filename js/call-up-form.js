@@ -7,8 +7,14 @@ var bodyOverlay = document.querySelector(".body-overlay");
 
 callUpButton.addEventListener("click", function(event) {
   event.preventDefault();
-  callUpForm.classList.add("call-up-menu_form--visible");
-  bodyOverlay.classList.add("body-overlay--open");
+  if(callUpForm.classList.contains("call-up-menu_form--visible")) {
+    callUpForm.classList.remove("call-up-menu_form--visible");
+    bodyOverlay.classList.remove("body-overlay--open");
+  }
+  else {
+    callUpForm.classList.add("call-up-menu_form--visible");
+    bodyOverlay.classList.add("body-overlay--open");
+  }
 });
 
 window.addEventListener("keydown", function(event) {
