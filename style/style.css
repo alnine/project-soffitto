@@ -718,7 +718,7 @@ button {
 
   .pop-up-order {
     display: none;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
