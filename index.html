@@ -55,7 +55,7 @@
 
             <form class="call-up-menu_form" action="index.html" method="post">
               <input class="call-up-menu_form-phone phone-mask" type="tel" name="call-up-phone" value="" placeholder="Укажите номер" pattern="\+38\(0\d{2}\)\d{3}[\-]\d{2}[\-]\d{2}">
-              <button class="call-up-menu_form-btn" type="submit" name="button">Ok</button></button>
+              <button class="call-up-menu_form-btn" type="submit" name="button">Ok</button>
             </form>
           </div>
           <!-- END HEADER CALL UP MENU -->
@@ -260,7 +260,7 @@
       <h2>Бесплатный<br>замер</h2>
       <p>Укажите желаемые дату и&nbsp;время, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для подтверждения замера</p>
       <form class="pop-up-order_form" action="index.html" method="post" autocomplete="off">
-        <input class="input-field" type="text" name="order-name" value="" placeholder="Имя" pattern="^[a-zA-Z-А-Яа-яЁё\s\']+$" required>
+        <input class="input-field" type="text" name="order-name" value="" placeholder="Имя" pattern="^[a-zA-Z-А-Яа-яЁё\s\']+$" required autofocus>
         <input class="input-field phone-mask" type="tel" name="order-phone" value="" placeholder="Телефон" pattern="\+38\(0\d{2}\)\d{3}[\-]\d{2}[\-]\d{2}" title="Формат: +38(067)777-55-33" required>
         <input class="input-field" type="text" data-toggle="datepicker" name="order-date" value="" required>
         <select class="input-field" name="order-time" required>
@@ -286,6 +286,7 @@
     <script src="js/order-date.js"></script>
     <script src="js/pop-up-order.js"></script>
     <script src="js/init-map.js"></script>
+    <script src="js/submit-form.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl8xoGg5A2V4R1qANDMM6OqghiUZEMK3M&callback=initMap"></script>
 
   </body>
