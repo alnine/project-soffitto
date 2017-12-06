@@ -34,6 +34,7 @@ button {
 
 .page-body {
   display: flex;
+
   flex-direction: column;
   min-width: 270px;
   background-color: #9CA098;
@@ -55,6 +56,52 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
+}
+
+.pop-up-message,
+.feedback-form-message {
+  display: none;
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  min-height: 50px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background-color: #444;
+  color: #fff;
+}
+
+.feedback-form-message {
+  height: 100%;
+}
+
+.pop-up-message span,
+.feedback-form-message span {
+  text-align: center;
+  font-size: 18px;
+}
+
+.pop-up-message-btn,
+.feedback-form-message-btn {
+  padding: 8px 20px;
+  margin-top: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+}
+
+.pop-up-message-btn:hover,
+.feedback-form-message-btn:hover {
+  background-color: #fff;
+  color: #444;
 }
 
 .container {
@@ -261,6 +308,18 @@ button {
     .call-up-menu_form-btn:hover {
       background-color: #E03A3A;
     }
+
+    .call-up-menu_form-btn:disabled {
+      border-color: #ccc;
+      color: #ccc;
+      cursor: default;
+    }
+
+    .call-up-menu_form-btn:disabled:hover {
+      background-color: transparent;
+    }
+
+
   /* END HEADER CALL UP MENU */
 
 /* END PAGE HEADER */
@@ -541,6 +600,7 @@ button {
     .feedback-form_wrapper {
       display: flex;
       flex-direction: column;
+      position: relative;
       width: 100%;
       max-width: 300px;
     }
@@ -607,6 +667,17 @@ button {
       background: none;
       border: 1px solid #fff;
       color: #fff;
+    }
+
+    .feedback-form_btn--submit:disabled {
+      border: 1px solid #ccc;
+      color: #ccc;
+      cursor: default;
+      background-color: transparent;
+    }
+
+    .feedback-form_btn--submit:disabled:hover {
+      background-color: transparent;
     }
   /* END FEEDBACK */
 
@@ -816,6 +887,17 @@ button {
 
   .pop-up-order_form-btn:hover {
     background-color: #921313;
+  }
+
+  .pop-up-order_form-btn:disabled {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #ccc;
+    cursor: default;
+  }
+
+  .pop-up-order_form-btn:disabled:hover {
+    background-color: transparent;
   }
 
   @media screen and (min-width: 420px) {
@@ -1241,6 +1323,10 @@ button {
 
       .feedback-form_btn--submit:hover {
         box-shadow: 0 2px 4px #333333;
+      }
+
+      .feedback-form_btn--submit:disabled:hover {
+        box-shadow: none;
       }
     /* FEEDBACK */
 
