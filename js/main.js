@@ -5,6 +5,8 @@
 ===============*/
 
 /*script for open and close main menu on mobile version*/
+
+
 var menuButton = document.querySelector(".hamburger");
 var menuList = document.querySelector(".main-nav");
 
@@ -20,6 +22,7 @@ menuButton.addEventListener("click", function(event) {
     menuList.classList.remove("main-nav--visible");
   }
 });
+
 /*===================================================*/
 
 
