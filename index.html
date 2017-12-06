@@ -53,8 +53,8 @@
 
             <button class="call-up-menu_btn call-up-menu--callback" type="button" name="button">Перезвоните мне</button>
 
-            <form class="call-up-menu_form" method="post" action="">
-              <input class="call-up-menu_form-phone phone-mask" type="tel" name="call-up-phone" value="" placeholder="Укажите номер" pattern="\+38\(0\d{2}\)\d{3}[\-]\d{2}[\-]\d{2}">
+            <form class="call-up-menu_form" method="post">
+              <input class="call-up-menu_form-phone phone-mask" type="tel" name="call-up-phone" value="" placeholder="Укажите номер" pattern="\+38\(0\d{2}\)\d{3}[\-]\d{2}[\-]\d{2}" required>
               <button class="call-up-menu_form-btn" type="submit" name="button">Ok</button>
             </form>
           </div>
@@ -202,16 +202,19 @@
           <div class="feedback-form_wrapper">
             <h3 class="feedback-header">Отзывы и предложения</h3>
             <form class="feedback-form" action="index.html" method="post" autocomplete="off">
-              <input class="input-field" type="text" name="feedback-name" value="" placeholder="Имя" pattern="^[a-zA-Z-А-Яа-яЁё\s\']+$">
-              <input class="input-field phone-mask" type="tel" name="feedback-phone" value="" placeholder="Телефон*" pattern="\+38\(0\d{2}\)\d{3}[\-]\d{2}[\-]\d{2}" title="Формат: +38(067)777-55-33">
-              <input class="input-field" type="email" name="feedback-email" value="" placeholder="E-mail*">
+              <input class="input-field" type="text" name="feedback-name" maxlength="30" value="" placeholder="Имя" title="Укажите имя" pattern="^[a-zA-Z-А-Яа-яЁё\s\']+$" required>
+              <input class="input-field phone-mask" type="tel" name="feedback-phone" value="" placeholder="Телефон*" title="Укажите телефон"  pattern="\+38\(0\d{2}\)\d{3}[\-]\d{2}[\-]\d{2}" title="Формат: +38(067)777-55-33">
+              <input class="input-field" type="email" name="feedback-email" title="Укажите e-mail" value="" placeholder="E-mail*">
               <span class="feedback-form_comment">*для ответа укажите телефон или e-mail</span>
-              <textarea class="input-field" name="feedback-message" rows="7" cols="30" placeholder="Ваше сообщение..." required></textarea>
+              <textarea class="input-field" name="feedback-message" maxlength="500" rows="7" cols="30" title="Введите ваше сообщение" placeholder="Ваше сообщение..." required></textarea>
               <div class="feedback-form_btn-wrapper">
                 <button class="feedback-form_btn feedback-form_btn--clean" type="reset" name="button">Очистить</button>
                 <button class="feedback-form_btn feedback-form_btn--submit" type="submit" name="button">Отправить</button>
               </div>
             </form>
+            <div class="feedback-form-message">
+              <button class="feedback-form-message-btn" type="button" name="button">OK</button>
+            </div>
           </div>
 
           <div id="feedback-map-wrapper"></div>
@@ -260,9 +263,9 @@
       <h2>Бесплатный<br>замер</h2>
       <p>Укажите желаемые дату и&nbsp;время, и&nbsp;мы&nbsp;свяжемся с&nbsp;вами для подтверждения замера</p>
       <form class="pop-up-order_form" action="index.html" method="post" autocomplete="off">
-        <input class="input-field" type="text" name="order-name" value="" placeholder="Имя" pattern="^[a-zA-Z-А-Яа-яЁё\s\']+$" required autofocus>
+        <input class="input-field" type="text" name="order-name" value="" maxlength="30" placeholder="Имя" title="Укажите имя" pattern="^[a-zA-Z-А-Яа-яЁё\s\']+$" required autofocus>
         <input class="input-field phone-mask" type="tel" name="order-phone" value="" placeholder="Телефон" pattern="\+38\(0\d{2}\)\d{3}[\-]\d{2}[\-]\d{2}" title="Формат: +38(067)777-55-33" required>
-        <input class="input-field" type="text" data-toggle="datepicker" name="order-date" value="" required>
+        <input class="input-field" type="text" title="Укажите желаемую дату" data-toggle="datepicker" name="order-date" value="" required placeholder="Дата">
         <select class="input-field" name="order-time" required>
           <option value="" selected disabled>Время</option>
           <option value="9-12">9:00-12:00</option>
@@ -275,6 +278,9 @@
     </div>
 
     <div class="body-overlay"></div>
+    <div class="pop-up-message">
+      <button class="pop-up-message-btn" type="button" name="button">OK</button>
+    </div>
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/jquery.maskedinput.min.js"></script>
@@ -282,6 +288,7 @@
     <script src="js/lib/datepicker.ru-RU.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/ajax.js"></script>
     <script src="js/init-map.js"></script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl8xoGg5A2V4R1qANDMM6OqghiUZEMK3M&callback=initMap"></script>
