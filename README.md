@@ -1,2 +1,1 @@
-# alnine.github.io
-Soffitto site hosting for test
+Project Soffitto site for test and storing
