@@ -34,7 +34,6 @@ button {
 
 .page-body {
   display: flex;
-
   flex-direction: column;
   min-width: 270px;
   background-color: #9CA098;
@@ -59,7 +58,8 @@ button {
 }
 
 .pop-up-message,
-.feedback-form-message {
+.feedback-form-message,
+.warning-message {
   display: none;
   position: absolute;
   z-index: 15;
@@ -79,18 +79,24 @@ button {
   color: #fff;
 }
 
+.warning-message {
+  position: fixed;
+}
+
 .feedback-form-message {
   height: 100%;
 }
 
 .pop-up-message span,
-.feedback-form-message span {
+.feedback-form-message span,
+.warning-message span {
   text-align: center;
   font-size: 18px;
 }
 
 .pop-up-message-btn,
-.feedback-form-message-btn {
+.feedback-form-message-btn,
+.warning-message-btn {
   padding: 8px 20px;
   margin-top: 20px;
   color: #fff;
@@ -99,7 +105,8 @@ button {
 }
 
 .pop-up-message-btn:hover,
-.feedback-form-message-btn:hover {
+.feedback-form-message-btn:hover,
+.warning-message-btn:hover {
   background-color: #fff;
   color: #444;
 }
