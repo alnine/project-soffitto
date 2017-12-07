@@ -2,13 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="discription" content="">
+    <meta name="discription" content="Заказать и установить натяжные потолки с гарантией 10 лет по доступной цене в Днепре, Каменском и пригородах. Бесплатный замер. Рассрочка. Жмите!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студия натяжных потолков "Soffitto"</title>
+    <!-- main title -->
+    <title>Натяжные потолки &mdash; установка в Днепре и Каменском | Бесплатный замер | Цена</title>
+    <!-- style links -->
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/datepicker.css">
+    <!-- favicon setting -->
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#e03a3a">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body class="page-body">
 
@@ -72,7 +80,9 @@
           <div class="index-promo-title">
             <h1 class="index-promo-title_header">Натяжные потолки</h1>
             <p class="index-promo-title_description">
-              продажа и монтаж в&nbsp;<span class="index-promo-title_highlight-word">Днепре и&nbsp;Каменском</span>&nbsp;(Днепродзержинск)
+              продажа и&nbsp;монтаж в
+              <span class="index-promo-title_highlight-word">Каменском, Днепре</span>
+              и&nbsp;пригородах
             </p>
           </div>
           <!-- END MAIN TITLE -->
@@ -85,7 +95,7 @@
 
             <div class="index-promo-option_item index-promo-option--portfolio">
               <p class="index-promo-option_item-description">Здесь ты можешь посмотреть фото наших работ, убедиться в профессионализме или просто вдохновиться идеями</p>
-              <a class="index-promo-option_item-link" href="#">Посмотреть работы</a>
+              <a class="index-promo-option_item-link call-warning-msg" href="#">Посмотреть работы</a>
             </div>
           </div>
           <!-- END USER OPTION -->
@@ -176,17 +186,17 @@
       <div class="portfolio" id="block-portfolio">
         <div class="container">
 
-          <a class="portfolio_link" href="#">
+          <a class="portfolio_link call-warning-msg" href="#">
             <img class="portfolio_link-image" src="img/satin.jpg" alt="Портфолио" width="300">
             <span>Портфолио</span>
           </a>
 
-          <a class="portfolio_link" href="#">
+          <a class="portfolio_link call-warning-msg" href="#">
             <img class="portfolio_link-image" src="img/satin.jpg" alt="Подпись" width="300">
             <span>Цвет</span>
           </a>
 
-          <a class="portfolio_link" href="#">
+          <a class="portfolio_link call-warning-msg" href="#">
             <img class="portfolio_link-image" src="img/satin.jpg" alt="Подпись" width="300">
             <span>Материалы</span>
           </a>
@@ -249,8 +259,8 @@
 
         <!-- SOCIAL LINKS -->
         <div class="footer-social">
-          <a href="#" class="footer-social_link footer-social_link--fb" target="_blank" rel="nofollow">Facebook</a>
-          <a href="#" class="footer-social_link footer-social_link--instagram" target="_blank" rel="nofollow">Instagram</a>
+          <a href="#" class="footer-social_link footer-social_link--fb call-warning-msg" target="_blank" rel="nofollow">Facebook</a>
+          <a href="#" class="footer-social_link footer-social_link--instagram call-warning-msg" target="_blank" rel="nofollow">Instagram</a>
         </div>
         <!-- END SOCIAL LINKS -->
 
@@ -281,6 +291,13 @@
     <div class="pop-up-message">
       <button class="pop-up-message-btn" type="button" name="button">OK</button>
     </div>
+    <div class="warning-message">
+      <span>
+        Приносим извинения. Раздел ещё находится в&nbsp;разработке, но&nbsp;в&nbsp;скором
+         времени будет доступен. Спасибо за&nbsp;понимание:)
+      </span>
+      <button class="warning-message-btn" type="button" name="button">OK</button>
+    </div>
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/jquery.maskedinput.min.js"></script>
@@ -289,6 +306,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/ajax.js"></script>
+    <script src="js/warning.js"></script>
     <script src="js/init-map.js"></script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl8xoGg5A2V4R1qANDMM6OqghiUZEMK3M&callback=initMap"></script>
